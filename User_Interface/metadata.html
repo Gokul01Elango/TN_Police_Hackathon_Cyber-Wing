@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meta Data Extractor</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: Arial, sans-serif;
+		}
+		
+		header {
+			background-color: #4CAF50;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 10px 20px;
+		}
+		
+		.logo {
+			height: 50px;
+			margin-right: auto;
+		}
+		
+		.search-container {
+			display: flex;
+			align-items: center;
+			margin: 20px;
+			background-color: #F5F5F5;
+			border-radius: 5px;
+			padding: 10px;
+			box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+			max-width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.search-container label {
+			font-size: 20px;
+			font-weight: bold;
+			margin-right: 10px;
+		}
+		
+		.search-container input[type=text] {
+			padding: 10px;
+			border: none;
+			border-radius: 3px;
+			width: 100%;
+			margin-right: 10px;
+		}
+		
+		.search-container button {
+			background-color: #333;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-right: 10px;
+			transition: background-color 0.2s ease-in-out;
+		}
+		
+		.search-container button:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<img src="logo1.png" alt="Left logo" class="logo">
+		<img src="logo2.jpeg" alt="Right logo" class="logo">
+	</header>
+	<div class="search-container">
+		<label for="channelmessages">Enter Channel Link (ID):</label>
+		<input type="text" id="channelmessages" name="channelmessages">
+		<button>Get Messages</button>
+		<button>Get Users Name</button>
+	</div>
+</body>
+</html>
